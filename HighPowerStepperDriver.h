@@ -205,7 +205,7 @@ public:
   /// operation of the driver.
   void resetSettings()
   {
-    ctrl   = 0xC10;
+    ctrl   = 0xC90;  // Change to external stall detect so clearStatus() deasserts STALLn/BEMFVn pin
     torque = 0x1FF;
     off    = 0x030;
     blank  = 0x080;
